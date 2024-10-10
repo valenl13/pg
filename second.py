@@ -1,5 +1,5 @@
 def cislo_text(cislo):
-    cislo = int(cislo)  # Převod vstupu na celé číslo
+    cislo = int(cislo)
     if cislo < 0 or cislo > 100:
         return "Číslo musí být v rozmezí 0 až 100."
 
