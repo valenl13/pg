@@ -1,8 +1,4 @@
 def je_prvocislo(cislo):
-    """
-    Funkce overi, zda zadane cislo je nebo neni prvocislo a vrati True nebo False.
-    Prvocislo je takove cislo vetsi nez 1, ktere neni delitelne zadnym jinym cislem nez 1 a samo sebou.
-    """
     if cislo < 2:
         return False
     for i in range(2, int(cislo ** 0.5) + 1):
@@ -11,10 +7,7 @@ def je_prvocislo(cislo):
     return True
 
 def vrat_prvocisla(maximum):
-    """
-    Funkce spocita vsechna prvocisla v rozsahu 1 az maximum a vrati je jako seznam.
-    """
-    maximum = int(maximum)  # ensure maximum is an integer
+    maximum = int(maximum)
     prvocisla = []
     for cislo in range(2, maximum + 1):
         if je_prvocislo(cislo):
