@@ -8,8 +8,7 @@ def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
         return False  # Target is off the board or occupied
 
     if typ == 'pěšec':
-        return (dr, dc) == (1, 0) or ((dr, dc) == (2, 0) and start[0] == 2 and 
-                                       (start[0] + 1, start[1]) not in obsazene_pozice)
+        return (dr, dc) in {(1, 0), (2, 0)} if start[0] == 2 else (dr, dc) == (1, 0)
 
     elif typ == 'jezdec':
         return (abs(dr), abs(dc)) in {(2, 1), (1, 2)}
