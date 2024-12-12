@@ -1,4 +1,3 @@
-# Simplifying the `je_tah_mozny` function to make it as concise as possible
 def je_tah_mozny(figurka, cilova_pozice, obsazene_pozice):
     start = figurka['pozice']
     typ = figurka['typ']
